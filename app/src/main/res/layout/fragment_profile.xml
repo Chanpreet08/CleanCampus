@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context=".fragment.ProfileFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_icon"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/em"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp" />
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_logout"
+        android:id="@+id/logout"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/img1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/userimageprofile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="UserName"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameprofile"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/userimageprofile"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="ACCOUNT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/lcolor"
+        android:textSize="13dp"
+        android:id="@+id/account"
+        android:layout_below="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/signoutt"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_alignLeft="@+id/phonen"
+        android:layout_alignStart="@+id/phonen" />
+
+    <TextView
+        android:text="kaushalbhardwaj12@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imageView4"
+        android:layout_toRightOf="@+id/account"
+        android:layout_toEndOf="@+id/account" />
+
+    <TextView
+        android:text="+91-7597775454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/phonen"
+        android:layout_above="@+id/logout"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_mail_black_envelope_symbol"
+        android:id="@+id/em"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/account"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="@color/lcolor"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/usernameprofile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|right"
+        app:srcCompat="@drawable/ic_rubbish_bin"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
